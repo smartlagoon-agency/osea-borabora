@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu principal" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Navigation principale" [ref=e5]:
+      - link "O-sea Bora Bora — Accueil" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "O-sea Bora Bora logo" [ref=e7]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Accueil" [ref=e10] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e11]:
+          - button "Excursions" [ref=e12] [cursor=pointer]
+        - listitem [ref=e13]:
+          - link "À Propos" [ref=e14] [cursor=pointer]:
+            - /url: /a-propos.html
+        - listitem [ref=e15]:
+          - link "FAQ" [ref=e16] [cursor=pointer]:
+            - /url: /faq.html
+        - listitem [ref=e17]:
+          - link "Contact" [ref=e18] [cursor=pointer]:
+            - /url: /contact.html
+      - generic [ref=e19]:
+        - button "Switch to English" [ref=e20] [cursor=pointer]: EN
+        - link "Réserver" [ref=e21] [cursor=pointer]:
+          - /url: /contact.html
+  - navigation "Menu mobile" [ref=e22]:
+    - list [ref=e23]:
+      - listitem [ref=e24]:
+        - link "Accueil" [ref=e25] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e26]:
+        - button "Excursions" [ref=e27] [cursor=pointer]
+      - listitem [ref=e28]:
+        - link "À Propos" [ref=e29] [cursor=pointer]:
+          - /url: /a-propos.html
+      - listitem [ref=e30]:
+        - link "FAQ" [ref=e31] [cursor=pointer]:
+          - /url: /faq.html
+      - listitem [ref=e32]:
+        - link "Contact" [ref=e33] [cursor=pointer]:
+          - /url: /contact.html
+    - generic [ref=e34]:
+      - link "Réserver une excursion" [ref=e35] [cursor=pointer]:
+        - /url: /contact.html
+      - link "WhatsApp Hiro" [ref=e36] [cursor=pointer]:
+        - /url: https://wa.me/68987218122
+        - img [ref=e37]
+        - generic [ref=e39]: WhatsApp Hiro
+  - main [ref=e40]:
+    - region "À propos d'O-sea Bora Bora" [ref=e41]:
+      - img "Capitaine Hiro Mulatier sur le bateau au coeur du lagon turquoise de Bora Bora" [ref=e43]
+      - generic [ref=e45]:
+        - generic [ref=e46]: À Propos
+        - heading "Hiro Mulatier — Le lagon de Bora Bora, raconté de l'intérieur" [level=1] [ref=e47]
+    - region "Hiro Mulatier" [ref=e48]:
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - img "Capitaine Hiro Mulatier, fondateur d'O-sea Bora Bora" [ref=e52]
+          - generic [ref=e53]:
+            - blockquote [ref=e54]: Ia ora na. Ce lagon, je le connais depuis l'enfance. Je veux vous le montrer comme personne d'autre ne peut le faire.
+            - generic [ref=e55]: — Hiro Mulatier, Capitaine O-sea
+        - generic [ref=e56]:
+          - generic [ref=e57]: Fondateur & Capitaine
+          - heading "Hiro Mulatier" [level=2] [ref=e58]
+          - generic [ref=e59]:
+            - paragraph [ref=e60]: Ia ora na. Je m'appelle Hiro Mulatier. Je suis né à Raiatea, aux Îles-Sous-le-Vent, et j'ai grandi entre l'océan et le lagon. Avant même de savoir nager correctement, je savais reconnaître une raie manta à sa silhouette dans le contre-jour.
+            - paragraph [ref=e61]: J'ai passé des années dans l'hôtellerie nautique haut de gamme — au Four Seasons et chez Reef Discovery — où j'ai appris à guider des dizaines de nationalités différentes dans les eaux que j'aimais depuis l'enfance. J'ai compris que la différence entre une excursion ordinaire et un vrai souvenir, c'est la personne qui vous guide. Ce qu'elle sait. Ce qu'elle ressent pour ce lieu.
+            - paragraph [ref=e62]: "J'ai fondé O-sea Bora Bora pour une raison simple : je voulais guider les gens comme j'aurais voulu être guidé moi-même. Pas en groupe de 20 à la queue leu leu. Pas avec un script récité. Avec une vraie connaissance du lagon, une vraie attention à ce que vous vivez, et un respect profond pour la faune marine que je vois comme une responsabilité, pas comme un décor."
+            - paragraph [ref=e63]: Je suis aussi photographe. Quand je vous emmène dans l'eau, je sais où est la lumière et où sont les animaux. Si vous aimez les photos, on va en faire de belles.
+    - region "Mélanie Mulatier" [ref=e64]:
+      - generic [ref=e67]:
+        - generic [ref=e68]: L'équipe O-sea
+        - heading "Mélanie Mulatier" [level=2] [ref=e69]
+        - paragraph [ref=e71]: Mélanie Mulatier est née et a grandi à Bora Bora. Elle gère les réservations et les détails opérationnels d'O-sea avec la même attention qu'elle apporte à ses clients. Passionnée de danse polynésienne, elle est souvent la première voix que vous entendez — et elle s'assure que votre arrivée sur le lagon se passe parfaitement.
+        - img "Équipe O-sea Bora Bora — Hiro et Mélanie Mulatier" [ref=e73]
+    - region "Ce en quoi nous croyons" [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: Nos valeurs
+          - heading "Ce en quoi nous croyons" [level=2] [ref=e78]
+        - list [ref=e79]:
+          - listitem [ref=e80]: Connaissance locale — Hiro est né dans ces îles. Chaque excursion est guidée par une connaissance acquise en grandissant ici, pas apprise dans un manuel.
+          - listitem [ref=e81]: Éco-responsabilité concrète — Pas de nourrissage des animaux. Pas de comportement perturbateur. Un briefing marin avant chaque sortie. Parce que ce lagon n'est pas un décor — c'est un écosystème vivant.
+          - listitem [ref=e82]: Petits groupes par principe — Maximum 4 personnes sur les tours privés, jusqu'à 10 sur les tours partagés. Pour que chaque personne soit vraiment guidée, pas juste transportée.
+          - listitem [ref=e83]: Honnêteté sur la faune — Lors de nos sorties, vous pouvez rencontrer raies, tortues et requins. Nous ne promettons jamais ce que la nature ne garantit pas — mais nous connaissons les probabilités mieux que personne.
+    - region "On vous attend sur le lagon" [ref=e84]:
+      - generic [ref=e85]:
+        - heading "On vous attend sur le lagon" [level=2] [ref=e86]
+        - paragraph [ref=e87]: Choisissez votre excursion et écrivez à Hiro directement. Il répond personnellement.
+        - generic [ref=e88]:
+          - link "Voir nos excursions" [ref=e89] [cursor=pointer]:
+            - /url: /
+          - link "WhatsApp Hiro" [ref=e90] [cursor=pointer]:
+            - /url: https://wa.me/68987218122
+            - img [ref=e91]
+            - generic [ref=e93]: WhatsApp Hiro
+  - contentinfo [ref=e94]:
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - img "O-sea Bora Bora" [ref=e99]
+          - paragraph [ref=e100]: Le lagon vu par celui qui y est né
+          - generic [ref=e101]:
+            - link "Instagram O-sea Bora Bora" [ref=e102] [cursor=pointer]:
+              - /url: https://www.instagram.com/osea_borabora/
+              - img [ref=e103]
+            - link "Facebook O-sea Bora Bora" [ref=e105] [cursor=pointer]:
+              - /url: https://www.facebook.com/profile.php?id=61571760549959
+              - img [ref=e106]
+            - link "WhatsApp O-sea Bora Bora" [ref=e108] [cursor=pointer]:
+              - /url: https://wa.me/68987218122
+              - img [ref=e109]
+        - navigation "Excursions" [ref=e111]:
+          - heading "Nos Excursions" [level=4] [ref=e112]
+          - list [ref=e113]:
+            - listitem [ref=e114]:
+              - link "Snorkeling Partagé" [ref=e115] [cursor=pointer]:
+                - /url: /excursions/snorkeling-partage/
+            - listitem [ref=e116]:
+              - link "Snorkeling Privé" [ref=e117] [cursor=pointer]:
+                - /url: /excursions/snorkeling-prive/
+            - listitem [ref=e118]:
+              - link "Sunset Partagé" [ref=e119] [cursor=pointer]:
+                - /url: /excursions/coucher-soleil-partage/
+            - listitem [ref=e120]:
+              - link "Sunset Privé" [ref=e121] [cursor=pointer]:
+                - /url: /excursions/coucher-soleil-prive/
+            - listitem [ref=e122]:
+              - link "Journée Complète" [ref=e123] [cursor=pointer]:
+                - /url: /excursions/journee-complete-partage/
+            - listitem [ref=e124]:
+              - link "Journée Complète Privée" [ref=e125] [cursor=pointer]:
+                - /url: /excursions/journee-complete-privee/
+            - listitem [ref=e126]:
+              - link "Tour Panoramique" [ref=e127] [cursor=pointer]:
+                - /url: /excursions/tour-panoramique/
+            - listitem [ref=e128]:
+              - link "Transfert Bateau" [ref=e129] [cursor=pointer]:
+                - /url: /excursions/transfert-bateau/
+        - navigation "À propos" [ref=e130]:
+          - heading "À Propos" [level=4] [ref=e131]
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - link "À Propos d'Hiro" [ref=e134] [cursor=pointer]:
+                - /url: /a-propos/
+            - listitem [ref=e135]:
+              - link "FAQ" [ref=e136] [cursor=pointer]:
+                - /url: /faq/
+            - listitem [ref=e137]:
+              - link "Contact & Réservation" [ref=e138] [cursor=pointer]:
+                - /url: /contact/
+        - generic [ref=e139]:
+          - heading "Nous contacter" [level=4] [ref=e140]
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - img [ref=e143]
+              - generic [ref=e146]: Nunue 98730 Bora Bora, Polynésie Française
+            - generic [ref=e147]:
+              - img [ref=e148]
+              - link "+689 87 21 81 22" [ref=e150] [cursor=pointer]:
+                - /url: tel:+68987218122
+            - generic [ref=e151]:
+              - img [ref=e152]
+              - link "contact@o-seaborabora.com" [ref=e155] [cursor=pointer]:
+                - /url: mailto:contact@o-seaborabora.com
+            - generic [ref=e156]:
+              - img [ref=e157]
+              - generic [ref=e160]: Lun–Sam 6h–19h | Dim 6h–12h
+      - generic [ref=e161]:
+        - paragraph [ref=e162]: © 2026 O-sea Bora Bora — Capitaine Hiro Mulatier. Tous droits réservés
+        - navigation "Liens légaux" [ref=e163]:
+          - link "Mentions légales" [ref=e164] [cursor=pointer]:
+            - /url: /mentions-legales.html
+          - link "Politique de confidentialité" [ref=e165] [cursor=pointer]:
+            - /url: /politique-confidentialite.html

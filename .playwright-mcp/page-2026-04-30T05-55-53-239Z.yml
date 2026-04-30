@@ -1,0 +1,232 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "O-sea Bora Bora — Accueil" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: O-sea
+      - generic [ref=e7]:
+        - button "Switch to English" [ref=e8] [cursor=pointer]: EN
+        - link "Réserver" [ref=e9] [cursor=pointer]:
+          - /url: /contact.html
+        - button "Menu" [ref=e10] [cursor=pointer]
+  - navigation "Navigation mobile" [ref=e14]:
+    - list [ref=e15]:
+      - listitem [ref=e16]:
+        - link "Accueil" [ref=e17] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e18]:
+        - link "Snorkeling Partagé" [ref=e19] [cursor=pointer]:
+          - /url: /excursions/snorkeling-partage.html
+      - listitem [ref=e20]:
+        - link "Coucher de Soleil Partagé" [ref=e21] [cursor=pointer]:
+          - /url: /excursions/coucher-soleil-partage.html
+      - listitem [ref=e22]:
+        - link "Journée Complète Partagée" [ref=e23] [cursor=pointer]:
+          - /url: /excursions/journee-complete-partage.html
+      - listitem [ref=e24]:
+        - link "Tour Panoramique" [ref=e25] [cursor=pointer]:
+          - /url: /excursions/tour-panoramique.html
+      - listitem [ref=e26]:
+        - link "Snorkeling Privé" [ref=e27] [cursor=pointer]:
+          - /url: /excursions/snorkeling-prive.html
+      - listitem [ref=e28]:
+        - link "Coucher de Soleil Privé" [ref=e29] [cursor=pointer]:
+          - /url: /excursions/coucher-soleil-prive.html
+      - listitem [ref=e30]:
+        - link "Journée Complète Privée" [ref=e31] [cursor=pointer]:
+          - /url: /excursions/journee-complete-privee.html
+      - listitem [ref=e32]:
+        - link "Transfert Bateau" [ref=e33] [cursor=pointer]:
+          - /url: /excursions/transfert-bateau.html
+      - listitem [ref=e34]:
+        - link "À Propos" [ref=e35] [cursor=pointer]:
+          - /url: /a-propos.html
+      - listitem [ref=e36]:
+        - link "FAQ" [ref=e37] [cursor=pointer]:
+          - /url: /faq.html
+      - listitem [ref=e38]:
+        - link "Contact" [ref=e39] [cursor=pointer]:
+          - /url: /contact.html
+      - listitem [ref=e40]:
+        - link "Réserver" [ref=e41] [cursor=pointer]:
+          - /url: /contact.html
+  - main [ref=e42]:
+    - region "Coucher de Soleil Privé Bora Bora" [ref=e43]:
+      - img "Coucher de soleil romantique sur le lagon de Bora Bora — tour privé O-sea" [ref=e45]
+      - generic [ref=e47]:
+        - navigation "Fil d'Ariane" [ref=e48]:
+          - list [ref=e49]:
+            - listitem [ref=e50]:
+              - link "Accueil" [ref=e51] [cursor=pointer]:
+                - /url: /
+              - text: /
+            - listitem [ref=e52]:
+              - link "Excursions" [ref=e53] [cursor=pointer]:
+                - /url: /#tours
+              - text: /
+            - listitem [ref=e54]:
+              - generic [ref=e55]: Coucher de Soleil Privé
+        - generic [ref=e57]: Privé
+        - heading "Coucher de Soleil Privé — Bora Bora pour vous seuls" [level=1] [ref=e58]
+        - generic [ref=e59]:
+          - generic [ref=e60]: 2h00
+          - generic [ref=e61]: 2 pers. max
+          - generic [ref=e62]: Champagne inclus
+        - link "Demander un devis" [ref=e63] [cursor=pointer]:
+          - /url: /contact.html
+    - region "Le tour qui a fait pleurer des mariées" [ref=e64]:
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - heading "Le tour qui a fait pleurer des mariées" [level=2] [ref=e68]
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: Champagne. Silence. Le Mont Otemanu qui prend feu dans le ciel. Et Bora Bora pour vous seuls, pendant 2 heures. C'est ce que Hiro propose dans son coucher de soleil privé — un moment que vous n'oublierez pas.
+            - paragraph [ref=e71]: Ce tour est pour 2 personnes maximum. Hiro reste discret — il navigue, il vous place aux meilleurs angles pour les photos, il s'assure que votre verre ne se vide jamais. Il est là sans être intrusif.
+            - paragraph [ref=e72]: "C'est le tour préféré des voyageurs en lune de miel à Bora Bora. Sophie et Romain, de Lyon, ont écrit : « C'était le plus beau moment de notre lune de miel. Champagne, silence, et ce coucher de soleil incroyable sur le Mont Otemanu. »"
+        - complementary [ref=e73]:
+          - generic [ref=e74]:
+            - heading "Ce qui est inclus" [level=3] [ref=e75]
+            - list [ref=e76]:
+              - listitem [ref=e77]: ✓ Champagne à bord
+              - listitem [ref=e78]: ✓ Amuse-bouches locaux
+              - listitem [ref=e79]: ✓ Prise en charge hôtel par bateau
+              - listitem [ref=e80]: ✓ Navigation panoramique exclusive
+              - listitem [ref=e81]: ✓ Gilets de sécurité
+              - listitem [ref=e82]: ✓ Hiro photographe — conseils cadrage
+            - separator [ref=e83]
+            - paragraph [ref=e84]: Tarif
+            - paragraph [ref=e85]: Sur devis
+            - paragraph [ref=e86]: Exclusif 2 personnes — adultes uniquement
+            - link "Demander un devis" [ref=e87] [cursor=pointer]:
+              - /url: /contact.html
+    - region "Autres excursions coucher de soleil" [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: Vous aimerez aussi
+          - heading "Autres excursions coucher de soleil" [level=2] [ref=e92]
+        - generic [ref=e93]:
+          - article [ref=e94]:
+            - generic [ref=e95]:
+              - img "Coucher de soleil partagé Bora Bora — max 6 personnes" [ref=e96]
+              - generic [ref=e98]: Partagé
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - generic [ref=e101]: 2h00
+                - generic [ref=e102]: Max 6 pers.
+              - heading "Coucher de Soleil Partagé" [level=3] [ref=e103]
+              - paragraph [ref=e104]: 2h sur le lagon au coucher du soleil avec boissons et amuse-bouches. Max 6 personnes.
+              - generic [ref=e105]:
+                - generic [ref=e106]: Sur devis
+                - link "Découvrir le coucher de soleil partagé" [ref=e107] [cursor=pointer]:
+                  - /url: /excursions/coucher-soleil-partage.html
+          - article [ref=e108]:
+            - generic [ref=e109]:
+              - img "Snorkeling privé Bora Bora — 3h30 en exclusivité" [ref=e110]
+              - generic [ref=e112]: Privé
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - generic [ref=e115]: 3h30
+                - generic [ref=e116]: Max 4 pers.
+              - heading "Snorkeling Privé — Demi-journée" [level=3] [ref=e117]
+              - paragraph [ref=e118]: 3h30 en exclusivité avec Hiro. Programme sur mesure dans les spots préservés du lagon.
+              - generic [ref=e119]:
+                - generic [ref=e120]: Sur devis
+                - link "Découvrir le snorkeling privé" [ref=e121] [cursor=pointer]:
+                  - /url: /excursions/snorkeling-prive.html
+          - article [ref=e122]:
+            - generic [ref=e123]:
+              - img "Journée complète privée — snorkeling et motu exclusif Bora Bora" [ref=e124]
+              - generic [ref=e126]: Privé
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e129]: 7h30
+                - generic [ref=e130]: Max 4 pers.
+              - heading "Journée Complète Privée" [level=3] [ref=e131]
+              - paragraph [ref=e132]: 7h30 en exclusivité — snorkeling, déjeuner sur un motu privé, programme entièrement adapté.
+              - generic [ref=e133]:
+                - generic [ref=e134]: Sur devis
+                - link "Découvrir la journée complète privée" [ref=e135] [cursor=pointer]:
+                  - /url: /excursions/journee-complete-privee.html
+    - region "Réservez le coucher de soleil de votre vie" [ref=e136]:
+      - generic [ref=e137]:
+        - heading "Réservez le coucher de soleil de votre vie" [level=2] [ref=e138]
+        - paragraph [ref=e139]: Hiro prépare chaque détail. Il vous suffit d'écrire.
+        - generic [ref=e140]:
+          - link "Réserver le Coucher de Soleil Privé" [ref=e141] [cursor=pointer]:
+            - /url: /contact.html
+          - link "WhatsApp Hiro" [ref=e142] [cursor=pointer]:
+            - /url: https://wa.me/68987218122
+            - img [ref=e143]
+            - text: WhatsApp Hiro
+  - contentinfo [ref=e145]:
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - img "O-sea Bora Bora" [ref=e150]
+          - paragraph [ref=e151]: Le lagon vu par celui qui y est né
+          - generic [ref=e152]:
+            - link "Instagram" [ref=e153] [cursor=pointer]:
+              - /url: https://www.instagram.com/osea_borabora/
+              - img [ref=e154]
+            - link "WhatsApp" [ref=e156] [cursor=pointer]:
+              - /url: https://wa.me/68987218122
+              - img [ref=e157]
+        - navigation "Excursions" [ref=e159]:
+          - heading "Nos Excursions" [level=4] [ref=e160]
+          - list [ref=e161]:
+            - listitem [ref=e162]:
+              - link "Snorkeling Partagé" [ref=e163] [cursor=pointer]:
+                - /url: /excursions/snorkeling-partage.html
+            - listitem [ref=e164]:
+              - link "Snorkeling Privé" [ref=e165] [cursor=pointer]:
+                - /url: /excursions/snorkeling-prive.html
+            - listitem [ref=e166]:
+              - link "Coucher de Soleil Partagé" [ref=e167] [cursor=pointer]:
+                - /url: /excursions/coucher-soleil-partage.html
+            - listitem [ref=e168]:
+              - link "Coucher de Soleil Privé" [ref=e169] [cursor=pointer]:
+                - /url: /excursions/coucher-soleil-prive.html
+            - listitem [ref=e170]:
+              - link "Journée Complète Partagée" [ref=e171] [cursor=pointer]:
+                - /url: /excursions/journee-complete-partage.html
+            - listitem [ref=e172]:
+              - link "Journée Complète Privée" [ref=e173] [cursor=pointer]:
+                - /url: /excursions/journee-complete-privee.html
+            - listitem [ref=e174]:
+              - link "Tour Panoramique" [ref=e175] [cursor=pointer]:
+                - /url: /excursions/tour-panoramique.html
+            - listitem [ref=e176]:
+              - link "Transfert Bateau" [ref=e177] [cursor=pointer]:
+                - /url: /excursions/transfert-bateau.html
+        - navigation "À propos" [ref=e178]:
+          - heading "À Propos" [level=4] [ref=e179]
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - link "À Propos d'Hiro" [ref=e182] [cursor=pointer]:
+                - /url: /a-propos.html
+            - listitem [ref=e183]:
+              - link "FAQ" [ref=e184] [cursor=pointer]:
+                - /url: /faq.html
+            - listitem [ref=e185]:
+              - link "Contact & Réservation" [ref=e186] [cursor=pointer]:
+                - /url: /contact.html
+        - generic [ref=e187]:
+          - heading "Nous contacter" [level=4] [ref=e188]
+          - generic [ref=e189]:
+            - link "+689 87 21 81 22" [ref=e191] [cursor=pointer]:
+              - /url: tel:+68987218122
+            - link "contact@o-seaborabora.com" [ref=e193] [cursor=pointer]:
+              - /url: mailto:contact@o-seaborabora.com
+      - generic [ref=e194]:
+        - paragraph [ref=e195]: © 2026 O-sea Bora Bora. Tous droits réservés
+        - navigation "Liens légaux" [ref=e196]:
+          - link "Mentions légales" [ref=e197] [cursor=pointer]:
+            - /url: /mentions-legales.html
+          - link "Politique de confidentialité" [ref=e198] [cursor=pointer]:
+            - /url: /politique-confidentialite.html
+  - complementary "Contact WhatsApp" [ref=e199]:
+    - link "Réserver sur WhatsApp" [ref=e200] [cursor=pointer]:
+      - /url: https://wa.me/68987218122
+      - img [ref=e201]
+      - generic [ref=e203]: Réserver sur WhatsApp
