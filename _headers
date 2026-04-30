@@ -1,0 +1,36 @@
+# O-sea Bora Bora — Cloudflare Pages Security Headers
+# Généré par audit sécurité Smart Lagoon Agency — 2026-04-29
+# Score : A (0.87) — 1 warning unsafe-inline, à durcir après externalisation JS inline
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+  Cross-Origin-Opener-Policy: same-origin
+  X-Permitted-Cross-Domain-Policies: none
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://n8n.smartlagoon.agency; form-action 'self' https://wa.me; frame-ancestors 'none'; base-uri 'self'; upgrade-insecure-requests
+
+# NOTE DURCISSEMENT : 'unsafe-inline' dans script-src est temporaire.
+# Raison : index.html:204 contient un onclick inline sur le sous-menu mobile.
+# Action requise avant passage en production dure :
+#   1. Déplacer le handler onclick vers main.js (initBurgerMenu ou nouvelle fonction)
+#   2. Supprimer 'unsafe-inline' de script-src
+#   3. Optionnel : générer un nonce serveur-side si Cloudflare Workers actif
+#
+# connect-src inclut https://n8n.smartlagoon.agency pour le webhook formulaire.
+# Mettre à jour avec l'URL exacte du webhook quand form-handler-site agent configure l'ACTION_URL.
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=86400

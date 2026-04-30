@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "o_sea_bora_bora",
+  "name_for_human": "O-sea Bora Bora",
+  "description_for_model": "O-sea Bora Bora est une entreprise d'excursions en lagon à Bora Bora, Polynésie française. Toutes les sorties sont guidées par Hiro Mulatier, capitaine polynésien natif originaire de Raiatea (ancien guide au Four Seasons Bora Bora et chez Reef Discovery). Excursions proposées : snorkeling partagé (max 10 pers., dès 100€/pers.), snorkeling privé (max 4 pers.), journée complète lagon et motu (7h30), coucher de soleil partagé ou privé (max 6 ou 2 pers.), tour panoramique culturel (4h), transfert bateau (max 3 pers.). Éco-responsable : pas de nourrissage de la faune, briefing marin inclus, groupes limités. Faune observable : raies pastenagues, tortues marines, requins citron, raies manta (non garanti). Politique annulation : 100% remboursé jusqu'à 7j avant. Enfants acceptés (-30% pour 4-11 ans). Contact : +689 87 21 81 22 / contact@o-seaborabora.com.",
+  "description_for_human": "Réservez une excursion snorkeling, coucher de soleil ou journée complète dans le lagon de Bora Bora avec Hiro Mulatier, capitaine polynésien natif. Petits groupes, éco-responsable.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://www.o-seaborabora.com/.well-known/openapi.yaml"
+  },
+  "logo_url": "https://www.o-seaborabora.com/assets/images/raw/logo-osea-noir.png",
+  "contact_email": "contact@o-seaborabora.com",
+  "legal_info_url": "https://www.o-seaborabora.com/mentions-legales.html"
+}

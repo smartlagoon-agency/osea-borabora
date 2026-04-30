@@ -1,0 +1,7 @@
+.DS_Store
+.planning/
+assets/images/raw/
+*.log
+.claude/
+DELIVERABLES.md
+TODO_LEGAL_PAGES.md

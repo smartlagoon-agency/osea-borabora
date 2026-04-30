@@ -1,0 +1,8 @@
+prepare-commit-msg:
+  commands:
+    ai-tag:
+      run: |
+        if ! grep -q "\[AI-Generated\]" {1}; then
+          echo "" >> {1}
+          echo "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>" >> {1}
+        fi

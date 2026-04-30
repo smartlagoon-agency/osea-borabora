@@ -1,0 +1,39 @@
+# O-sea Bora Bora — Cloudflare Pages Redirects
+# 301 redirects: ancien slug WordPress → nouveau slug statique
+
+# Tours excursions
+/excursions/randonnee-aquatique-prive-demi-journee/         /excursions/snorkeling-prive/           301
+/excursions/randonnee-aquatique-prive-demi-journee          /excursions/snorkeling-prive/           301
+/excursions/randonnee-aquatique-shared-half-day/            /excursions/snorkeling-partage/         301
+/excursions/randonnee-aquatique-shared-half-day             /excursions/snorkeling-partage/         301
+/excursions/randonnee-aquatique-prive-journee-complete/     /excursions/journee-complete-privee/    301
+/excursions/randonnee-aquatique-prive-journee-complete      /excursions/journee-complete-privee/    301
+/excursions/randonnee-aquatique-partage-journee-complete/   /excursions/journee-complete-partage/   301
+/excursions/randonnee-aquatique-partage-journee-complete    /excursions/journee-complete-partage/   301
+/excursions/coucher-de-soleil-prive/                        /excursions/coucher-soleil-prive/       301
+/excursions/coucher-de-soleil-prive                         /excursions/coucher-soleil-prive/       301
+/excursions/coucher-de-soleil-partage/                      /excursions/coucher-soleil-partage/     301
+/excursions/coucher-de-soleil-partage                       /excursions/coucher-soleil-partage/     301
+/excursions/scenic-tour-partage-demi-journee/               /excursions/tour-panoramique/           301
+/excursions/scenic-tour-partage-demi-journee                /excursions/tour-panoramique/           301
+/excursions/transfert/                                      /excursions/transfert-bateau/           301
+/excursions/transfert                                       /excursions/transfert-bateau/           301
+
+# Taxonomy pages WP → page d'accueil
+/tours-category/private-tours/   /           301
+/tours-category/shared-tours/    /           301
+/tours-category/                 /           301
+
+# Ancienne page réserver
+/reserver/    /contact/   301
+/reserver     /contact/   301
+
+# Pages légales WP → versions statiques
+/mentions-legales/               /mentions-legales.html                  301
+/politique-de-confidentialite/   /politique-confidentialite.html         301
+/conditions-generales-de-vente/  /                                       301
+
+# WordPress admin/login/content — sécurité + crawl budget
+/wp-admin/*     /     302
+/wp-login.php   /     302
+/wp-content/*   /     410

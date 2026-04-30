@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.o-seaborabora.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- English home -->
+  <url>
+    <loc>https://www.o-seaborabora.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tours — shared -->
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/snorkeling-partage/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/snorkeling-partage/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/snorkeling-partage/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/coucher-soleil-partage/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/coucher-soleil-partage/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/coucher-soleil-partage/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/journee-complete-partage/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/journee-complete-partage/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/journee-complete-partage/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/tour-panoramique/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/tour-panoramique/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/tour-panoramique/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tours — private -->
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/snorkeling-prive/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/snorkeling-prive/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/snorkeling-prive/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/coucher-soleil-prive/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/coucher-soleil-prive/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/coucher-soleil-prive/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/journee-complete-privee/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/journee-complete-privee/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/journee-complete-privee/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/excursions/transfert-bateau/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/excursions/transfert-bateau/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/excursions/transfert-bateau/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Secondary pages -->
+  <url>
+    <loc>https://www.o-seaborabora.com/a-propos/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/a-propos/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/faq/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/contact/"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal pages — noindex but included for crawl completeness -->
+  <url>
+    <loc>https://www.o-seaborabora.com/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/mentions-legales.html"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <url>
+    <loc>https://www.o-seaborabora.com/politique-confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.o-seaborabora.com/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.o-seaborabora.com/en/politique-confidentialite.html"/>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+</urlset>
