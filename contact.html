@@ -546,5 +546,36 @@
 </a>
 
 <script src="/assets/js/main.js" defer></script>
+
+<!-- CHAT WIDGET -->
+<div id="chat-widget" class="chat-widget">
+  <div id="chat-panel" class="chat-panel" role="dialog" aria-labelledby="chat-panel-title" hidden>
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">🌊</div>
+        <div>
+          <p id="chat-panel-title" class="chat-name" data-fr="Assistant O-sea" data-en="O-sea Assistant">Assistant O-sea</p>
+          <p class="chat-status" data-fr="En ligne" data-en="Online">En ligne</p>
+        </div>
+      </div>
+      <button id="chat-close" class="chat-close" aria-label="Fermer le chat">✕</button>
+    </div>
+    <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+    <div class="chat-input-area">
+      <input id="chat-input" type="text"
+             placeholder="Votre question…"
+             data-placeholder-fr="Votre question…"
+             data-placeholder-en="Your question…"
+             aria-label="Message">
+      <button id="chat-send" aria-label="Envoyer">→</button>
+    </div>
+  </div>
+  <button id="chat-toggle" class="chat-toggle" aria-label="Ouvrir le chat" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+    </svg>
+  </button>
+</div>
+<script src="/assets/js/chatbot.js"></script>
 </body>
 </html>

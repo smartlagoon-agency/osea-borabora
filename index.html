@@ -692,43 +692,20 @@
     </div>
   </section>
 
-  <!-- CAPTAIN SNIPPET -->
-  <section class="section section-alt" aria-labelledby="captain-home-heading">
-    <div class="container">
-      <div class="captain-layout">
-        <div class="captain-photo-wrapper fade-in">
-          <img src="/assets/images/raw/capitaine-hiro-portrait.webp"
-               alt="Capitaine Hiro Mulatier, fondateur d'O-sea Bora Bora"
-               width="400" height="500"
-               loading="lazy"
-               decoding="async">
-          <div class="captain-quote-card">
-            <blockquote
-              data-fr="Ia ora na. Ce lagon, je le connais depuis l'enfance. Je veux vous le montrer comme personne d'autre ne peut le faire."
-              data-en="Ia ora na. I've known this lagoon since childhood. I want to show it to you the way no one else can.">
-              Ia ora na. Ce lagon, je le connais depuis l'enfance. Je veux vous le montrer comme personne d'autre ne peut le faire.
-            </blockquote>
-            <cite>— Hiro Mulatier, Capitaine O-sea</cite>
-          </div>
-        </div>
-        <div class="fade-up">
-          <span class="section-overline" data-fr="Qui est Hiro ?" data-en="Who is Hiro?">Qui est Hiro ?</span>
-          <h2 id="captain-home-heading" class="section-title"
-              data-fr="Hiro Mulatier — Le lagon de Bora Bora, raconté de l'intérieur"
-              data-en="Hiro Mulatier — Bora Bora's Lagoon, Told from the Inside">
-            Hiro Mulatier — Le lagon de Bora Bora, raconté de l'intérieur
-          </h2>
-          <p class="captain-bio"
-             data-fr="Hiro connaît chaque courant, chaque spot, chaque humeur de ce lagon. Il y est né, il y a grandi. Quand vous montez à bord, vous n'avez pas un guide — vous avez l'enfant de ces eaux."
-             data-en="Hiro knows every current, every spot, every mood of this lagoon. He was born here, raised here. When you step aboard, you don't get a guide — you get someone who grew up in these waters.">
-            Hiro connaît chaque courant, chaque spot, chaque humeur de ce lagon. Il y est né, il y a grandi. Quand vous montez à bord, vous n'avez pas un guide — vous avez l'enfant de ces eaux.
-          </p>
-          <a href="/a-propos.html" class="btn-secondary" style="margin-top:2rem;display:inline-flex;"
-             data-fr="En savoir plus sur Hiro" data-en="Learn More About Hiro">
-            En savoir plus sur Hiro
-          </a>
-        </div>
-      </div>
+  <!-- CAPTAIN SNIPPET — cinématique full-bleed -->
+  <section class="about-cinematic" aria-label="Qui est Hiro ?">
+    <div class="about-cinematic-inner fade-in">
+      <span class="about-cinematic-overline" data-fr="Qui est Hiro ?" data-en="Who is Hiro?">Qui est Hiro ?</span>
+      <blockquote
+        data-fr="« Ia ora na. Ce lagon, je le connais depuis l'enfance. Je veux vous le montrer comme personne d'autre ne peut le faire. »"
+        data-en="« Ia ora na. I've known this lagoon since childhood. I want to show it to you the way no one else can. »">
+        « Ia ora na. Ce lagon, je le connais depuis l'enfance. Je veux vous le montrer comme personne d'autre ne peut le faire. »
+      </blockquote>
+      <cite>— Hiro Mulatier, Capitaine O-sea</cite>
+      <a href="/a-propos.html" class="btn-secondary"
+         data-fr="En savoir plus sur Hiro" data-en="Learn More About Hiro">
+        En savoir plus sur Hiro
+      </a>
     </div>
   </section>
 
@@ -1243,5 +1220,36 @@
 </div>
 
 <script src="/assets/js/main.js"></script>
+
+<!-- CHAT WIDGET -->
+<div id="chat-widget" class="chat-widget">
+  <div id="chat-panel" class="chat-panel" role="dialog" aria-labelledby="chat-panel-title" hidden>
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">🌊</div>
+        <div>
+          <p id="chat-panel-title" class="chat-name" data-fr="Assistant O-sea" data-en="O-sea Assistant">Assistant O-sea</p>
+          <p class="chat-status" data-fr="En ligne" data-en="Online">En ligne</p>
+        </div>
+      </div>
+      <button id="chat-close" class="chat-close" aria-label="Fermer le chat">✕</button>
+    </div>
+    <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+    <div class="chat-input-area">
+      <input id="chat-input" type="text"
+             placeholder="Votre question…"
+             data-placeholder-fr="Votre question…"
+             data-placeholder-en="Your question…"
+             aria-label="Message">
+      <button id="chat-send" aria-label="Envoyer">→</button>
+    </div>
+  </div>
+  <button id="chat-toggle" class="chat-toggle" aria-label="Ouvrir le chat" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+    </svg>
+  </button>
+</div>
+<script src="/assets/js/chatbot.js"></script>
 </body>
 </html>

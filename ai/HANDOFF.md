@@ -1,10 +1,10 @@
 # HANDOFF — O-sea Bora Bora
-_Dernière mise à jour : 2026-04-30_
+_Dernière mise à jour : 2026-04-29_
 
 ## État actuel
-**Phase** : Élévation UI/UX Premium — sprint en cours (étapes 1-3 livrées, 4-6 à faire)
+**Phase** : Élévation UI/UX Premium — sprint en cours (étapes 1-5 livrées, étape 6 + chatbot n8n à faire)
 **Preview live** : https://osea-borabora.pages.dev ✅
-**Dernier deploy hash** : https://0f15dde2.osea-borabora.pages.dev (étapes 1-3)
+**Dernier deploy hash** : https://a6954053.osea-borabora.pages.dev (étapes 4-5 + chatbot widget)
 **GitHub** : https://github.com/smartlagoon-agency/osea-borabora (main, 4 commits)
 **Plan détaillé** : `/Users/joramlaw/.claude/plans/shiny-humming-eagle.md`
 
@@ -15,9 +15,13 @@ _Dernière mise à jour : 2026-04-30_
 | 1 | Tokens brand v2 | ✅ FAIT | `--color-sand`, `--color-sand-deep`, `--color-coral-warm`, `--font-size-display`, `--shadow-editorial` dans `:root` |
 | 2 | Hero éditorial | ✅ FAIT | Cormorant XL italique `clamp(3rem,9vw,8rem)`, overlay bottom-up, kicker small caps, 1 CTA + lien texte, scroll-cue animé |
 | 3 | Numéros éditoriaux | ✅ FAIT | Suppression USP-strip bleu SaaS → 4 chiffres 01-04 Cormorant italique corail sur fond `--color-sand` ivoire |
-| 4 | Tours magazine | 🔄 EN COURS | Grid renommée `tours-editorial` — il manque : class `tour-card--featured` sur Journée Complète Partagée + CSS grid 3-col asymétrique (featured span 2 cols) |
-| 5 | Hiro full-bleed | ⏳ TODO | Section `.captain-layout` → 100vw cinématique, photo full-bleed + citation Cormorant italique XL en surimpression |
+| 4 | Tours magazine | ✅ FAIT | Grid `tours-editorial` 3-col, `tour-card--featured` span 2 cols, badges outline, bouton flèche |
+| 5 | Hiro full-bleed | ✅ FAIT | Section `.about-cinematic` 100vw, `background-image` photo Hiro, overlay dégradé, citation Cormorant italique XL |
 | 6 | Signature polynésienne | ⏳ TODO | Wave dividers SVG entre sections + motif tapa SVG watermark (opacity 0.04) + CTA nav "RÉSERVER" → outline corail |
+
+## Hors sprint livré en plus
+
+- **Chatbot widget lagon** : `assets/js/chatbot.js` + CSS dans `styles.css` + HTML injecté dans les 15 pages (index + 14 sous-pages). Webhook placeholder : `https://n8n.smartlagoon.agency/webhook/osea-chat` — **à créer côté n8n**.
 
 ## Reprise immédiate — Étape 4 (tours magazine)
 
