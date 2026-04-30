@@ -910,6 +910,53 @@ button:focus-visible {
   .tours-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
+/* ============================================================
+   TOURS EDITORIAL — grid magazine asymétrique
+   ============================================================ */
+.tours-editorial {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-8);
+}
+
+@media (min-width: 768px) {
+  .tours-editorial { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1280px) {
+  .tours-editorial { grid-template-columns: repeat(3, 1fr); }
+  .tour-card--featured { grid-column: span 2; }
+  .tour-card--featured .tour-card-image { aspect-ratio: 16 / 9; }
+}
+
+/* Badge outline — version éditoriale sur carte featured */
+.badge-outline {
+  background: transparent;
+  border: 1.5px solid currentColor;
+}
+.badge-outline.badge-shared { color: var(--color-secondary-deep); }
+.badge-outline.badge-price  { color: var(--color-accent); }
+
+/* Lien flèche — carte featured */
+.btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-widest);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: gap var(--duration-fast) var(--ease-out);
+}
+.btn-arrow::after {
+  content: '→';
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+.btn-arrow:hover { gap: var(--spacing-3); }
+.btn-arrow:hover::after { transform: translateX(2px); }
+
 .tour-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
