@@ -2022,7 +2022,8 @@ button:focus-visible {
   height: 18px;
 }
 
-.footer-nav h4 {
+.footer-nav h4,
+.footer-nav-title {
   font-family: var(--font-body);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
@@ -2050,7 +2051,8 @@ button:focus-visible {
 
 .footer-contact {}
 
-.footer-contact h4 {
+.footer-contact h4,
+.footer-contact .footer-nav-title {
   font-family: var(--font-body);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
@@ -2058,6 +2060,38 @@ button:focus-visible {
   text-transform: uppercase;
   color: var(--color-secondary);
   margin-bottom: var(--spacing-5);
+}
+
+/* Logo texte premium (fallback quand pas d'image) */
+.footer-logo-text {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  font-style: italic;
+  color: var(--color-text-inverse);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* Adresse contact footer */
+.footer-contact address {
+  font-style: normal;
+  font-size: var(--font-size-sm);
+  color: oklch(0.80 0.04 88);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  line-height: var(--line-height-snug);
+}
+
+.footer-contact address a {
+  color: var(--color-secondary);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+
+.footer-contact address a:hover {
+  color: var(--color-text-inverse);
 }
 
 .footer-contact-items {
