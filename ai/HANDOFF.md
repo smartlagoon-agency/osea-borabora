@@ -2,10 +2,10 @@
 _Dernière mise à jour : 2026-04-29_
 
 ## État actuel
-**Phase** : Élévation UI/UX Premium — sprint en cours (étapes 1-5 livrées, étape 6 + chatbot n8n à faire)
+**Phase** : Sprint UI Premium TERMINÉ — prêt pour DNS + activation n8n
 **Preview live** : https://osea-borabora.pages.dev ✅
-**Dernier deploy hash** : https://a6954053.osea-borabora.pages.dev (étapes 4-5 + chatbot widget)
-**GitHub** : https://github.com/smartlagoon-agency/osea-borabora (main, 4 commits)
+**Dernier deploy hash** : https://3af71ba5.osea-borabora.pages.dev (footer unifié)
+**GitHub** : https://github.com/smartlagoon-agency/osea-borabora (main, 11 commits locaux — push en attente)
 **Plan détaillé** : `/Users/joramlaw/.claude/plans/shiny-humming-eagle.md`
 
 ## Sprint UI Premium — État des étapes
@@ -17,11 +17,12 @@ _Dernière mise à jour : 2026-04-29_
 | 3 | Numéros éditoriaux | ✅ FAIT | Suppression USP-strip bleu SaaS → 4 chiffres 01-04 Cormorant italique corail sur fond `--color-sand` ivoire |
 | 4 | Tours magazine | ✅ FAIT | Grid `tours-editorial` 3-col, `tour-card--featured` span 2 cols, badges outline, bouton flèche |
 | 5 | Hiro full-bleed | ✅ FAIT | Section `.about-cinematic` 100vw, `background-image` photo Hiro, overlay dégradé, citation Cormorant italique XL |
-| 6 | Signature polynésienne | ⏳ TODO | Wave dividers SVG entre sections + motif tapa SVG watermark (opacity 0.04) + CTA nav "RÉSERVER" → outline corail |
+| 6 | Signature polynésienne | ✅ FAIT | Wave dividers SVG x3 (hero→sable, tours→Hiro, dark→why), tapa SVG watermark opacity 0.04, CTA nav outline corail |
 
 ## Hors sprint livré en plus
 
-- **Chatbot widget lagon** : `assets/js/chatbot.js` + CSS dans `styles.css` + HTML injecté dans les 15 pages (index + 14 sous-pages). Webhook placeholder : `https://n8n.smartlagoon.agency/webhook/osea-chat` — **à créer côté n8n**.
+- **Chatbot widget lagon** : `assets/js/chatbot.js` + CSS dans `styles.css` + HTML injecté dans les 15 pages. Webhook placeholder : `https://n8n.smartlagoon.agency/webhook/osea-chat` — **à créer côté n8n**.
+- **Footer unifié** : CSS fix `h3.footer-nav-title` (était `h4`), `footer-logo-text` Cormorant, `address` styled. Footer-bottom standardisé sur 14 pages (copyright + légaux + éco-badge).
 
 ## Reprise immédiate — Étape 4 (tours magazine)
 
