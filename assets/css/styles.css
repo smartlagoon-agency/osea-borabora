@@ -3246,3 +3246,59 @@ img { height: auto; }
   .chat-widget { right: var(--spacing-4); bottom: var(--spacing-4); }
   .chat-panel  { width: calc(100vw - 2rem); }
 }
+
+/* ============================================================
+   ÉTAPE 6 — SIGNATURE POLYNÉSIENNE
+   ============================================================ */
+
+/* CTA nav "Réserver" → outline corail */
+.nav-actions .btn-primary {
+  background: transparent;
+  border-color: var(--color-coral-warm);
+  color: var(--color-coral-warm);
+}
+.nav-actions .btn-primary:hover {
+  background: var(--color-coral-warm);
+  border-color: var(--color-coral-warm);
+  color: var(--color-text-inverse);
+  box-shadow: 0 4px 16px oklch(0.64 0.13 32 / 0.30);
+  transform: none;
+}
+.site-header.is-solid .nav-actions .btn-primary {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.site-header.is-solid .nav-actions .btn-primary:hover {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+/* Motif tapa — watermark sur sections sable */
+.has-tapa-bg {
+  position: relative;
+}
+.has-tapa-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/images/pattern-tapa.svg');
+  background-repeat: repeat;
+  background-size: 60px 60px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+.has-tapa-bg > * { position: relative; z-index: 1; }
+
+/* Wave dividers */
+.wave-divider {
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 64px;
+}
