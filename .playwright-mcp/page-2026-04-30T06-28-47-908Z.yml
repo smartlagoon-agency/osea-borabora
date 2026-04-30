@@ -1,0 +1,437 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu principal" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Navigation principale" [ref=e5]:
+      - link "O-sea Bora Bora — Accueil" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "O-sea Bora Bora logo" [ref=e7]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Accueil" [ref=e10] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e11]:
+          - button "Excursions" [ref=e12] [cursor=pointer]
+        - listitem [ref=e13]:
+          - link "À Propos" [ref=e14] [cursor=pointer]:
+            - /url: /a-propos.html
+        - listitem [ref=e15]:
+          - link "FAQ" [ref=e16] [cursor=pointer]:
+            - /url: /faq.html
+        - listitem [ref=e17]:
+          - link "Contact" [ref=e18] [cursor=pointer]:
+            - /url: /contact.html
+      - generic [ref=e19]:
+        - button "Switch to English" [ref=e20] [cursor=pointer]: EN
+        - link "Réserver" [ref=e21] [cursor=pointer]:
+          - /url: /contact.html
+  - navigation "Menu mobile" [ref=e22]:
+    - list [ref=e23]:
+      - listitem [ref=e24]:
+        - link "Accueil" [ref=e25] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e26]:
+        - button "Excursions" [ref=e27] [cursor=pointer]
+      - listitem [ref=e28]:
+        - link "À Propos" [ref=e29] [cursor=pointer]:
+          - /url: /a-propos.html
+      - listitem [ref=e30]:
+        - link "FAQ" [ref=e31] [cursor=pointer]:
+          - /url: /faq.html
+      - listitem [ref=e32]:
+        - link "Contact" [ref=e33] [cursor=pointer]:
+          - /url: /contact.html
+    - generic [ref=e34]:
+      - link "Réserver une excursion" [ref=e35] [cursor=pointer]:
+        - /url: /contact.html
+      - link "WhatsApp Hiro" [ref=e36] [cursor=pointer]:
+        - /url: https://wa.me/68987218122
+        - img [ref=e37]
+        - generic [ref=e40]: WhatsApp Hiro
+  - main [ref=e41]:
+    - region "Introduction O-sea Bora Bora" [ref=e42]:
+      - img "Bateau O-sea naviguant sur le lagon turquoise de Bora Bora" [ref=e44]
+      - generic [ref=e46]:
+        - generic [ref=e47]: O-sea Bora Bora
+        - heading "Votre capitaine polynésien natif dans son propre lagon" [level=1] [ref=e48]
+        - paragraph [ref=e49]: Hiro Mulatier vous guide en petit groupe — sans impact sur la faune.
+        - generic [ref=e50]:
+          - link "Réserver une excursion" [ref=e51] [cursor=pointer]:
+            - /url: /contact.html
+          - link "Voir nos excursions" [ref=e52] [cursor=pointer]:
+            - /url: "#tours"
+    - region "Points forts O-sea" [ref=e53]:
+      - list [ref=e55]:
+        - listitem [ref=e56]:
+          - img [ref=e57]
+          - generic [ref=e60]: Capitaine polynésien natif
+        - listitem [ref=e61]:
+          - img [ref=e62]
+          - generic [ref=e64]: 4 à 10 passagers max
+        - listitem [ref=e65]:
+          - img [ref=e66]
+          - generic [ref=e69]: Éco-responsable par conviction
+        - listitem [ref=e70]:
+          - img [ref=e71]
+          - generic [ref=e73]: Faune marine connue spot par spot
+    - region "Choisissez votre aventure dans le lagon" [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: Nos excursions
+          - heading "Choisissez votre aventure dans le lagon" [level=2] [ref=e78]
+          - paragraph [ref=e79]: Snorkeling, coucher de soleil, journée complète sur un motu — chaque sortie est guidée par Hiro en personne. Groupes partagés à partir de 100 €/pers. Tours privés à partir de 620 €.
+        - generic [ref=e80]:
+          - article [ref=e81]:
+            - generic [ref=e82]:
+              - img "Snorkeling dans le lagon de Bora Bora — tour partagé" [ref=e83]
+              - generic [ref=e84]:
+                - generic [ref=e85]: Partagé
+                - generic [ref=e86]: Dès 100 €/pers.
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - generic [ref=e89]:
+                  - img [ref=e90]
+                  - generic [ref=e93]: 3h30
+                - generic [ref=e94]:
+                  - img [ref=e95]
+                  - generic [ref=e100]: Max 10 pers.
+              - heading "Snorkeling Partagé — Demi-journée" [level=3] [ref=e101]
+              - paragraph [ref=e102]: 3h30 de snorkeling dans les spots préservés du lagon avec Hiro. Maximum 10 personnes.
+              - generic [ref=e103]:
+                - generic [ref=e104]: À partir de 100 €/pers.
+                - link "Découvrir" [ref=e105] [cursor=pointer]:
+                  - /url: /excursions/snorkeling-partage.html
+          - article [ref=e106]:
+            - generic [ref=e107]:
+              - img "Tour snorkeling privé Bora Bora avec Capitaine Hiro" [ref=e108]
+              - generic [ref=e109]:
+                - generic [ref=e110]: Privé
+                - generic [ref=e111]: Éco-responsable
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e114]:
+                  - img [ref=e115]
+                  - generic [ref=e118]: 3h30
+                - generic [ref=e119]:
+                  - img [ref=e120]
+                  - generic [ref=e123]: Max 4 pers.
+              - heading "Snorkeling Privé — Demi-journée" [level=3] [ref=e124]
+              - paragraph [ref=e125]: 3h30 en exclusivité avec Hiro. Programme adapté à votre rythme et vos envies.
+              - generic [ref=e126]:
+                - generic [ref=e127]: Sur devis
+                - link "Découvrir" [ref=e128] [cursor=pointer]:
+                  - /url: /excursions/snorkeling-prive.html
+          - article [ref=e129]:
+            - generic [ref=e130]:
+              - img "Coucher de soleil sur le lagon de Bora Bora depuis le bateau O-sea" [ref=e131]
+              - generic [ref=e133]: Partagé
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - img [ref=e137]
+                  - generic [ref=e140]: 2h00
+                - generic [ref=e141]:
+                  - img [ref=e142]
+                  - generic [ref=e147]: Max 6 pers.
+              - heading "Coucher de Soleil Partagé" [level=3] [ref=e148]
+              - paragraph [ref=e149]: 2 heures sur le lagon au coucher du soleil, avec boissons et amuse-bouches locaux.
+              - generic [ref=e150]:
+                - generic [ref=e151]: Sur devis
+                - link "Découvrir" [ref=e152] [cursor=pointer]:
+                  - /url: /excursions/coucher-soleil-partage.html
+          - article [ref=e153]:
+            - generic [ref=e154]:
+              - img "Coucher de soleil romantique sur le lagon de Bora Bora" [ref=e155]
+              - generic [ref=e157]: Privé
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]:
+                  - img [ref=e161]
+                  - generic [ref=e164]: 2h00
+                - generic [ref=e165]:
+                  - img [ref=e166]
+                  - generic [ref=e169]: 2 pers. max
+              - heading "Coucher de Soleil Privé" [level=3] [ref=e170]
+              - paragraph [ref=e171]: 2 heures en exclusivité sur le lagon. Champagne, amuse-bouches locaux, et Bora Bora pour vous seuls.
+              - generic [ref=e172]:
+                - generic [ref=e173]: Sur devis
+                - link "Découvrir" [ref=e174] [cursor=pointer]:
+                  - /url: /excursions/coucher-soleil-prive.html
+          - article [ref=e175]:
+            - generic [ref=e176]:
+              - img "Bateau O-sea près d'un motu pour excursion journée complète" [ref=e177]
+              - generic [ref=e178]:
+                - generic [ref=e179]: Partagé
+                - generic [ref=e180]: Dès 100 €/pers.
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]:
+                  - img [ref=e184]
+                  - generic [ref=e187]: 7h30
+                - generic [ref=e188]:
+                  - img [ref=e189]
+                  - generic [ref=e194]: Max 10 pers.
+              - heading "Journée Complète Partagée" [level=3] [ref=e195]
+              - paragraph [ref=e196]: 7h30 de lagon, snorkeling et déjeuner local sur un motu. La journée la plus complète.
+              - generic [ref=e197]:
+                - generic [ref=e198]: À partir de 100 €/pers.
+                - link "Découvrir" [ref=e199] [cursor=pointer]:
+                  - /url: /excursions/journee-complete-partage.html
+          - article [ref=e200]:
+            - generic [ref=e201]:
+              - img "Tour panoramique Bora Bora avec immersion culturelle polynésienne" [ref=e202]
+              - generic [ref=e204]: Partagé
+            - generic [ref=e205]:
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - img [ref=e208]
+                  - generic [ref=e211]: 4h00
+                - generic [ref=e212]:
+                  - img [ref=e213]
+                  - generic [ref=e218]: Max 10 pers.
+              - heading "Tour Panoramique — Immersion Polynésienne" [level=3] [ref=e219]
+              - paragraph [ref=e220]: 4 heures de navigation autour de l'île, légendes polynésiennes et panoramas sur le Mont Otemanu.
+              - generic [ref=e221]:
+                - generic [ref=e222]: Sur devis
+                - link "Découvrir" [ref=e223] [cursor=pointer]:
+                  - /url: /excursions/tour-panoramique.html
+    - region "Hiro Mulatier — Le lagon de Bora Bora, raconté de l'intérieur" [ref=e224]:
+      - generic [ref=e226]:
+        - generic [ref=e227]:
+          - img "Capitaine Hiro Mulatier, fondateur d'O-sea Bora Bora" [ref=e228]
+          - generic [ref=e229]:
+            - blockquote [ref=e230]: Ia ora na. Ce lagon, je le connais depuis l'enfance. Je veux vous le montrer comme personne d'autre ne peut le faire.
+            - generic [ref=e231]: — Hiro Mulatier, Capitaine O-sea
+        - generic [ref=e232]:
+          - generic [ref=e233]: Qui est Hiro ?
+          - heading "Hiro Mulatier — Le lagon de Bora Bora, raconté de l'intérieur" [level=2] [ref=e234]
+          - paragraph [ref=e235]: Hiro connaît chaque courant, chaque spot, chaque humeur de ce lagon. Il y est né, il y a grandi. Quand vous montez à bord, vous n'avez pas un guide — vous avez l'enfant de ces eaux.
+          - link "En savoir plus sur Hiro" [ref=e236] [cursor=pointer]:
+            - /url: /a-propos.html
+    - region "Éco-responsable par conviction" [ref=e237]:
+      - generic [ref=e238]:
+        - generic [ref=e239]:
+          - generic [ref=e240]: Notre engagement
+          - heading "Éco-responsable par conviction" [level=2] [ref=e241]
+          - paragraph [ref=e242]: Pas de nourrissage des animaux. Pas de bruit inutile. Un briefing marin avant chaque sortie. Parce que ce lagon, Hiro veut le laisser intact à ses enfants.
+        - list [ref=e243]:
+          - listitem [ref=e244]:
+            - img [ref=e246]
+            - paragraph [ref=e248]: Aucun nourrissage de la faune marine
+          - listitem [ref=e249]:
+            - img [ref=e251]
+            - paragraph [ref=e254]: Briefing écologique inclus avant chaque sortie
+          - listitem [ref=e255]:
+            - img [ref=e257]
+            - paragraph [ref=e259]: Matériel de snorkeling respectueux des récifs
+          - listitem [ref=e260]:
+            - img [ref=e262]
+            - paragraph [ref=e267]: Groupes réduits pour limiter l'impact sur les espèces
+          - listitem [ref=e268]:
+            - img [ref=e270]
+            - paragraph [ref=e272]: Navigation à vitesse réduite dans les zones sensibles
+    - region "Pourquoi choisir O-sea ?" [ref=e273]:
+      - generic [ref=e274]:
+        - generic [ref=e275]:
+          - generic [ref=e276]: Nos différences
+          - heading "Pourquoi choisir O-sea ?" [level=2] [ref=e277]
+        - list [ref=e278]:
+          - listitem [ref=e279]:
+            - img [ref=e281]
+            - generic [ref=e283]:
+              - heading "Capitaine polynésien natif" [level=3] [ref=e284]
+              - paragraph [ref=e285]: Hiro est né à Raiatea, il vit ce lagon depuis l'enfance
+          - listitem [ref=e286]:
+            - img [ref=e288]
+            - generic [ref=e293]:
+              - heading "Petits groupes" [level=3] [ref=e294]
+              - paragraph [ref=e295]: 4 à 10 passagers maximum selon le tour, jamais un tour de masse
+          - listitem [ref=e296]:
+            - img [ref=e298]
+            - generic [ref=e300]:
+              - heading "Éco-responsable sans compromis" [level=3] [ref=e301]
+              - paragraph [ref=e302]: Pas de promesses, des pratiques concrètes
+          - listitem [ref=e303]:
+            - img [ref=e305]
+            - generic [ref=e308]:
+              - heading "Connaissance intime des espèces" [level=3] [ref=e309]
+              - paragraph [ref=e310]: "Raies, tortues, requins : Hiro connaît leurs habitudes"
+    - region "Ce que vous pouvez rencontrer dans le lagon" [ref=e311]:
+      - generic [ref=e313]:
+        - generic [ref=e314]: Marine Encounter Passport
+        - heading "Ce que vous pouvez rencontrer dans le lagon" [level=2] [ref=e315]
+        - paragraph [ref=e316]: Lors de nos sorties, vous pouvez croiser ces espèces emblématiques. La faune marine n'est jamais garantie — mais Hiro connaît leurs zones de passage habituelles.
+        - list [ref=e317]:
+          - listitem [ref=e318]:
+            - generic [ref=e319]: 🦈
+            - generic [ref=e320]: Requin citron
+            - generic [ref=e321]: Negaprion brevirostris
+            - generic [ref=e322]: Mao
+            - generic [ref=e323]: Quasi menacé
+          - listitem [ref=e324]:
+            - generic [ref=e325]: 🐟
+            - generic [ref=e326]: Raie manta
+            - generic [ref=e327]: Mobula birostris
+            - generic [ref=e328]: Fafā
+            - generic [ref=e329]: Vulnérable
+          - listitem [ref=e330]:
+            - generic [ref=e331]: 🐢
+            - generic [ref=e332]: Tortue verte
+            - generic [ref=e333]: Chelonia mydas
+            - generic [ref=e334]: Honu
+            - generic [ref=e335]: Vulnérable
+          - listitem [ref=e336]:
+            - generic [ref=e337]: 🐠
+            - generic [ref=e338]: Raie pastenague
+            - generic [ref=e339]: Himantura fai
+            - generic [ref=e340]: "'Ā'ahi"
+            - generic [ref=e341]: Préoccupation mineure
+          - listitem [ref=e342]:
+            - generic [ref=e343]: 🐡
+            - generic [ref=e344]: Poisson perroquet
+            - generic [ref=e345]: Scarus spp.
+            - generic [ref=e346]: Uhu
+            - generic [ref=e347]: Préoccupation mineure
+          - listitem [ref=e348]:
+            - generic [ref=e349]: 🐍
+            - generic [ref=e350]: Murène
+            - generic [ref=e351]: Gymnothorax spp.
+            - generic [ref=e352]: Puhi
+            - generic [ref=e353]: Préoccupation mineure
+    - region "Ce que disent nos passagers" [ref=e354]:
+      - generic [ref=e355]:
+        - generic [ref=e356]:
+          - generic [ref=e357]: Témoignages
+          - heading "Ce que disent nos passagers" [level=2] [ref=e358]
+        - generic [ref=e359]:
+          - article [ref=e360]:
+            - generic "5 étoiles" [ref=e361]:
+              - img [ref=e362]
+              - img [ref=e364]
+              - img [ref=e366]
+              - img [ref=e368]
+              - img [ref=e370]
+            - blockquote [ref=e372]: « Hiro n'est pas un guide ordinaire. Il nous a montré des spots que nous n'aurions jamais trouvés seuls, et la façon dont il parle de ce lagon — avec un amour visible — change complètement l'expérience. »
+            - generic [ref=e373]:
+              - generic [ref=e374]: M
+              - generic [ref=e375]:
+                - paragraph [ref=e376]: Marie-Claire
+                - paragraph [ref=e377]: Paris, France
+          - article [ref=e378]:
+            - generic "5 stars" [ref=e379]:
+              - img [ref=e380]
+              - img [ref=e382]
+              - img [ref=e384]
+              - img [ref=e386]
+              - img [ref=e388]
+            - blockquote [ref=e390]: « Best tour we did in Bora Bora — and we did three. Hiro's knowledge of the reef is unreal. We got to swim with stingrays and a lemon shark. He explained everything calmly and made sure everyone felt safe. »
+            - generic [ref=e391]:
+              - generic [ref=e392]: J
+              - generic [ref=e393]:
+                - paragraph [ref=e394]: James & Kate
+                - paragraph [ref=e395]: Sydney, Australie
+          - article [ref=e396]:
+            - generic "5 étoiles" [ref=e397]:
+              - img [ref=e398]
+              - img [ref=e400]
+              - img [ref=e402]
+              - img [ref=e404]
+              - img [ref=e406]
+            - blockquote [ref=e408]: « Le coucher de soleil privé était le plus beau moment de notre lune de miel. Hiro était là pour nous accueillir, discret et attentionné. Champagne, silence, et ce coucher de soleil incroyable sur le Mont Otemanu. »
+            - generic [ref=e409]:
+              - generic [ref=e410]: S
+              - generic [ref=e411]:
+                - paragraph [ref=e412]: Sophie & Romain
+                - paragraph [ref=e413]: Lyon, France
+    - region "Prêt à découvrir le vrai Bora Bora ?" [ref=e414]:
+      - generic [ref=e415]:
+        - heading "Prêt à découvrir le vrai Bora Bora ?" [level=2] [ref=e416]
+        - paragraph [ref=e417]: Choisissez votre excursion et écrivez à Hiro directement. Il répond personnellement — pas un centre d'appels.
+        - generic [ref=e418]:
+          - link "Réserver une excursion" [ref=e419] [cursor=pointer]:
+            - /url: /contact.html
+          - link "WhatsApp Hiro" [ref=e420] [cursor=pointer]:
+            - /url: https://wa.me/68987218122
+            - img [ref=e421]
+            - generic [ref=e423]: WhatsApp Hiro
+  - contentinfo [ref=e424]:
+    - generic [ref=e425]:
+      - generic [ref=e426]:
+        - generic [ref=e427]:
+          - img "O-sea Bora Bora" [ref=e429]
+          - paragraph [ref=e430]: Le lagon vu par celui qui y est né
+          - generic [ref=e431]:
+            - link "Instagram O-sea Bora Bora" [ref=e432] [cursor=pointer]:
+              - /url: https://www.instagram.com/osea_borabora/
+              - img [ref=e433]
+            - link "Facebook O-sea Bora Bora" [ref=e435] [cursor=pointer]:
+              - /url: https://www.facebook.com/profile.php?id=61571760549959
+              - img [ref=e436]
+            - link "WhatsApp O-sea Bora Bora" [ref=e438] [cursor=pointer]:
+              - /url: https://wa.me/68987218122
+              - img [ref=e439]
+        - navigation "Excursions" [ref=e441]:
+          - heading "Nos Excursions" [level=4] [ref=e442]
+          - list [ref=e443]:
+            - listitem [ref=e444]:
+              - link "Snorkeling Partagé" [ref=e445] [cursor=pointer]:
+                - /url: /excursions/snorkeling-partage.html
+            - listitem [ref=e446]:
+              - link "Snorkeling Privé" [ref=e447] [cursor=pointer]:
+                - /url: /excursions/snorkeling-prive.html
+            - listitem [ref=e448]:
+              - link "Sunset Partagé" [ref=e449] [cursor=pointer]:
+                - /url: /excursions/coucher-soleil-partage.html
+            - listitem [ref=e450]:
+              - link "Sunset Privé" [ref=e451] [cursor=pointer]:
+                - /url: /excursions/coucher-soleil-prive.html
+            - listitem [ref=e452]:
+              - link "Journée Complète Partagée" [ref=e453] [cursor=pointer]:
+                - /url: /excursions/journee-complete-partage.html
+            - listitem [ref=e454]:
+              - link "Journée Complète Privée" [ref=e455] [cursor=pointer]:
+                - /url: /excursions/journee-complete-privee.html
+            - listitem [ref=e456]:
+              - link "Tour Panoramique" [ref=e457] [cursor=pointer]:
+                - /url: /excursions/tour-panoramique.html
+            - listitem [ref=e458]:
+              - link "Transfert Bateau" [ref=e459] [cursor=pointer]:
+                - /url: /excursions/transfert-bateau.html
+        - navigation "À propos" [ref=e460]:
+          - heading "À Propos" [level=4] [ref=e461]
+          - list [ref=e462]:
+            - listitem [ref=e463]:
+              - link "À Propos d'Hiro" [ref=e464] [cursor=pointer]:
+                - /url: /a-propos.html
+            - listitem [ref=e465]:
+              - link "FAQ" [ref=e466] [cursor=pointer]:
+                - /url: /faq.html
+            - listitem [ref=e467]:
+              - link "Contact & Réservation" [ref=e468] [cursor=pointer]:
+                - /url: /contact.html
+        - generic [ref=e469]:
+          - heading "Nous contacter" [level=4] [ref=e470]
+          - generic [ref=e471]:
+            - generic [ref=e472]:
+              - img [ref=e473]
+              - generic [ref=e476]: Nunue 98730 Bora Bora, Polynésie française
+            - generic [ref=e477]:
+              - img [ref=e478]
+              - link "+689 87 21 81 22" [ref=e480] [cursor=pointer]:
+                - /url: tel:+68987218122
+            - generic [ref=e481]:
+              - img [ref=e482]
+              - link "contact@o-seaborabora.com" [ref=e485] [cursor=pointer]:
+                - /url: mailto:contact@o-seaborabora.com
+            - generic [ref=e486]:
+              - img [ref=e487]
+              - generic [ref=e490]: Lun–Sam 6h–19h | Dim 6h–12h
+      - generic [ref=e491]:
+        - paragraph [ref=e492]: © 2026 O-sea Bora Bora — Capitaine Hiro Mulatier. Tous droits réservés
+        - navigation "Liens légaux" [ref=e493]:
+          - link "Mentions légales" [ref=e494] [cursor=pointer]:
+            - /url: /mentions-legales.html
+          - link "Politique de confidentialité" [ref=e495] [cursor=pointer]:
+            - /url: /politique-confidentialite.html
+          - link "CGV" [ref=e496] [cursor=pointer]:
+            - /url: /cgv.html
