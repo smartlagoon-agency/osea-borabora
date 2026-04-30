@@ -2778,6 +2778,71 @@ img { height: auto; }
   display: block;
 }
 
+/* ===== INFOS PRATIQUES ===== */
+.practical-info-section {
+  background: var(--color-bg);
+}
+.practical-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-10);
+}
+@media (max-width: 900px) {
+  .practical-info-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .practical-info-grid { grid-template-columns: 1fr; }
+}
+.info-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-8) var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.info-card:hover {
+  box-shadow: 0 8px 32px oklch(0.56 0.15 28 / 0.08);
+  border-color: oklch(0.56 0.15 28 / 0.30);
+}
+.info-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: oklch(0.56 0.15 28 / 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+.info-card-highlight {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-accent);
+  line-height: 1.1;
+  letter-spacing: var(--letter-spacing-tight);
+  margin: 0;
+}
+.info-card-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: 0;
+}
+.info-card-body {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
 /* ===== TOUR CARDS — boutons raffinés premium ===== */
 .tour-card .btn-primary {
   background: transparent;
