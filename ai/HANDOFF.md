@@ -1,61 +1,93 @@
 # HANDOFF — O-sea Bora Bora
-_Dernière mise à jour : 2026-04-29_
+_Dernière mise à jour : 2026-04-30_
 
 ## État actuel
-**Phase** : Post-déploiement preview — en attente validation design client
-**Preview live** : https://osea-borabora.pages.dev ✅ (vérifié — site charge correctement)
-**GitHub** : https://github.com/smartlagoon-agency/osea-borabora (main, 1 commit)
-**Quality check** : 7/7 PASS ✅
+**Phase** : Élévation UI/UX Premium — sprint en cours (étapes 1-3 livrées, 4-6 à faire)
+**Preview live** : https://osea-borabora.pages.dev ✅
+**Dernier deploy hash** : https://0f15dde2.osea-borabora.pages.dev (étapes 1-3)
+**GitHub** : https://github.com/smartlagoon-agency/osea-borabora (main, 4 commits)
+**Plan détaillé** : `/Users/joramlaw/.claude/plans/shiny-humming-eagle.md`
 
-## Ce qui est livré
-- 14 pages HTML statiques (home + 8 tours + about + faq + contact + legal x2 + 404 + en/)
-- i18n FR/EN via data-fr/data-en + JS toggle
-- 13 blocs JSON-LD (TouristAttraction, LocalBusiness, FAQPage, BreadcrumbList…)
-- GEO-AI : llms.txt + llms-full.txt + .well-known/ai-plugin.json
-- SEO : 25 redirects 301 WP→nouveau, sitemap 16 URLs hreflang, meta OG complètes
-- Sécurité : _headers Cloudflare score A (0.87)
-- Formulaire : n8n webhook configuré (placeholder — à activer côté n8n)
-- Perf : LCP preload, aspect-ratio CLS, cache-control — Lighthouse estimé 88-95
-- Maillage interne : breadcrumbs + tours similaires + 0 page orpheline
+## Sprint UI Premium — État des étapes
 
-## ⚠️ BUG CRITIQUE — À corriger en priorité 1
-**Navigation overlay sur les pages tours** (visible sur `excursions/snorkeling-partage.html`) :
-- Le menu dropdown + breadcrumb + badges héro se superposent visuellement
-- Cause probable : z-index ou `position` du nav-dropdown pas bien isolé / nav mobile affiché en état ouvert sur desktop
-- Fichiers à modifier : `assets/css/styles.css` (nav, dropdown, breadcrumb z-index) + vérifier `assets/js/main.js` (état initial du menu)
+| # | Étape | Statut | Description |
+|---|---|---|---|
+| 1 | Tokens brand v2 | ✅ FAIT | `--color-sand`, `--color-sand-deep`, `--color-coral-warm`, `--font-size-display`, `--shadow-editorial` dans `:root` |
+| 2 | Hero éditorial | ✅ FAIT | Cormorant XL italique `clamp(3rem,9vw,8rem)`, overlay bottom-up, kicker small caps, 1 CTA + lien texte, scroll-cue animé |
+| 3 | Numéros éditoriaux | ✅ FAIT | Suppression USP-strip bleu SaaS → 4 chiffres 01-04 Cormorant italique corail sur fond `--color-sand` ivoire |
+| 4 | Tours magazine | 🔄 EN COURS | Grid renommée `tours-editorial` — il manque : class `tour-card--featured` sur Journée Complète Partagée + CSS grid 3-col asymétrique (featured span 2 cols) |
+| 5 | Hiro full-bleed | ⏳ TODO | Section `.captain-layout` → 100vw cinématique, photo full-bleed + citation Cormorant italique XL en surimpression |
+| 6 | Signature polynésienne | ⏳ TODO | Wave dividers SVG entre sections + motif tapa SVG watermark (opacity 0.04) + CTA nav "RÉSERVER" → outline corail |
 
-## Prochaine tâche recommandée : Redesign Premium
-Le design actuel est fonctionnel mais générique/bas-gamme pour le contexte tourisme luxe Bora Bora.
+## Reprise immédiate — Étape 4 (tours magazine)
 
-**Problèmes visuels identifiés (screenshots Joram 2026-04-29)** :
-1. Boutons orange cru + WhatsApp vert = clash, pas premium
-2. Section CTA : gradient bleu/teal plat = style SaaS, pas tourisme lagon
-3. Footer corporate navy générique, aucun sentiment polynésien
-4. Typographie correcte (Cormorant Garamond) mais layout trop dense
+**Fichier** : `index.html` + `assets/css/styles.css`
 
-**Direction design souhaitée** :
-- Style : premium éditorial tourisme (Aman Hotels, Four Seasons, Condé Nast Traveller)
-- Palette : renforcer le bleu lagon profond + sable/ivoire + touches corail élégantes (pas orange cru)
-- Boutons : raffinés, outline ou solid avec micro-animations hover
-- Footer : wave SVG divider + texture subtile + chaleur polynésienne
-- Sections : plus d'espace blanc, photos plus dominantes, moins de bleu flat
+**HTML** : ajouter `tour-card--featured` à l'article Journée Complète Partagée (ligne ~609) :
+```html
+<article class="tour-card tour-card--featured fade-up">
+```
+Aussi : changer les badges de pills pleins → outline (classe `badge-outline`) + bouton "Découvrir" → lien flèche.
+
+**CSS à ajouter** dans `assets/css/styles.css` :
+```css
+.tours-editorial {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-6);
+}
+@media (min-width: 768px) {
+  .tours-editorial {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .tour-card--featured {
+    grid-column: span 2;
+  }
+  .tour-card--featured .tour-card-image { aspect-ratio: 16/9; }
+}
+```
+
+## Étape 5 — Hiro full-bleed
+
+**Section** : `index.html` lignes ~696-745 (`.captain-layout`)
+**Image disponible** : `assets/images/raw/capitaine-hiro-portrait.webp`
+**Citation à utiliser** : *« Ia ora na. Ce lagon, je le connais depuis l'enfance. Je veux vous le montrer comme personne d'autre ne peut le faire. »*
+
+CSS `.about-cinematic` à créer :
+- `width: 100vw; margin-inline: calc(-50vw + 50%); min-height: 80vh`
+- Photo en `background-image` + overlay dégradé dark left
+- Citation Cormorant italique XL en surimpression gauche
+
+## Étape 6 — Signature polynésienne
+
+1. **Wave dividers SVG** : insérer entre hero→numéros, tours→captain, dark→why
+2. **Motif tapa SVG** : créer `assets/images/pattern-tapa.svg` (chevrons 80×80, 1 couleur), appliquer en `background-image` avec `opacity: 0.04` sur sections sable
+3. **CTA nav** : `.btn-cta` dans nav → passer de rouge solide à outline corail chaud (`var(--color-coral-warm)`) + hover plein
+
+## Ce qui est livré (socle intact)
+
+- 14 pages HTML statiques (home + 8 tours + about + faq + contact + legal x2 + 404)
+- i18n FR/EN complet
+- JSON-LD 13 blocs Schema
+- GEO-AI : llms.txt + llms-full.txt
+- SEO : 25 redirects 301, sitemap 16 URLs hreflang
+- Sécurité : _headers Cloudflare score A
+- Formulaire n8n webhook
+- Perf LCP preload, CLS aspect-ratio
 
 ## Actions client requises avant DNS
+
 1. **GA4 ID** → remplacer `G-XXXXXXXXXX` dans `assets/js/cookies-banner.js`
 2. **SIRET** → compléter dans `mentions-legales.html`
-3. **Décision max pax** → 10 (réel) ou 6 (positionnement premium) à confirmer avec Hiro
-4. **Test formulaire** → soumettre demande test sur preview, vérifier réception n8n
-5. **Témoignages réels** → avis Google datés à injecter dans index.html
+3. **Décision max pax** → 10 (réel) ou 6 (positionnement premium) — confirmer avec Hiro
+4. **Témoignages réels** → avis Google datés à injecter dans `index.html`
+5. **Test formulaire** → soumettre demande test, vérifier réception n8n
 
-## Risques ouverts
-- `unsafe-inline` dans CSP (onclick inline index.html) → à externaliser pour passer A+
-- SaaS Joram booking → placeholder prévu, à brancher quand MVP prêt
-- OG images par page tour → non générées (og-default.jpg générique utilisé)
-- analytics-site agent → résultat partiel, GA4 events à vérifier dans main.js
+## Fichiers clés
 
-## Fichiers importants pour reprendre
-- `assets/css/styles.css` — tout le CSS (2600+ lignes)
-- `assets/js/main.js` — JS global (~300+ lignes)
+- `assets/css/styles.css` — CSS principal (~2900 lignes après sprint)
+- `assets/js/main.js` — JS global
 - `index.html` — page principale
-- `excursions/snorkeling-partage.html` — exemple page tour (bug nav visible ici)
-- `.planning/design-variables.css` — tokens CSS source (non versionné)
+- `.planning/brief.json` — source de vérité copy (non versionné)
+- `ai/TASK_LOG.md` — historique des actions
