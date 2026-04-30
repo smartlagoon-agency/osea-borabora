@@ -18,8 +18,8 @@
   --color-primary-subtle:   oklch(0.93 0.04 226);
   --color-secondary:        oklch(0.74 0.13 196);
   --color-secondary-deep:   oklch(0.60 0.15 198);
-  --color-accent:           oklch(0.72 0.18 48);
-  --color-accent-warm:      oklch(0.82 0.14 72);
+  --color-accent:           oklch(0.56 0.15 28);
+  --color-accent-warm:      oklch(0.64 0.13 32);
   --color-bg:               oklch(0.98 0.008 88);
   --color-surface:          oklch(1 0 0);
   --color-surface-elevated: oklch(0.97 0.012 226);
@@ -469,8 +469,8 @@ button:focus-visible {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-inverse);
-  background: #25D366;
-  border: 2px solid #25D366;
+  background: oklch(0.50 0.17 152);
+  border: 2px solid oklch(0.50 0.17 152);
   border-radius: var(--radius-sm);
   padding: var(--spacing-3) var(--spacing-6);
   cursor: pointer;
@@ -480,8 +480,8 @@ button:focus-visible {
 }
 
 .btn-whatsapp:hover {
-  background: #1ebe5a;
-  border-color: #1ebe5a;
+  background: oklch(0.44 0.16 152);
+  border-color: oklch(0.44 0.16 152);
   color: var(--color-text-inverse);
   transform: scale(1.02);
 }
@@ -1695,19 +1695,40 @@ button:focus-visible {
    ============================================================ */
 .cta-band {
   padding-block: var(--spacing-20);
-  background: linear-gradient(
-    135deg,
-    oklch(0.34 0.12 230) 0%,
-    oklch(0.52 0.16 218) 50%,
-    oklch(0.68 0.14 200) 100%
-  );
+  padding-top: calc(var(--spacing-20) + 48px);
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 80% at 65% 110%, oklch(0.56 0.15 28 / 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 20% -10%, oklch(0.55 0.14 196 / 0.20) 0%, transparent 50%),
+    linear-gradient(165deg, oklch(0.16 0.07 235) 0%, oklch(0.24 0.11 228) 50%, oklch(0.32 0.12 215) 100%);
   text-align: center;
+}
+/* Vague en haut du CTA band : transition depuis la section claire au-dessus */
+.cta-band::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 52' preserveAspectRatio='none'%3E%3Cpath fill='%23f9f8f4' d='M0,0 L1440,0 L1440,20 C1200,52 960,8 720,36 C480,60 240,16 0,44 Z'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .cta-band h2 {
   color: var(--color-text-inverse);
   font-size: clamp(var(--font-size-3xl), 4vw, var(--font-size-5xl));
   margin-bottom: var(--spacing-4);
+}
+
+/* Contenu CTA au-dessus de la vague ::before */
+.cta-band > .container {
+  position: relative;
+  z-index: 2;
 }
 
 .cta-band p {
@@ -1816,7 +1837,11 @@ button:focus-visible {
    FOOTER
    ============================================================ */
 .site-footer {
-  background: var(--color-primary);
+  position: relative;
+  background:
+    radial-gradient(ellipse 100% 60% at 50% 100%, oklch(0.42 0.08 45 / 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, oklch(0.55 0.12 196 / 0.08) 0%, transparent 50%),
+    var(--color-primary);
   color: var(--color-text-inverse);
   padding-block: var(--spacing-16);
 }
@@ -2017,11 +2042,11 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: var(--spacing-3);
-  background: #25D366;
+  background: oklch(0.50 0.17 152);
   color: white;
   padding: var(--spacing-4) var(--spacing-5);
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.40);
+  box-shadow: 0 4px 24px oklch(0.50 0.17 152 / 0.35);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   text-decoration: none;
@@ -2031,7 +2056,7 @@ button:focus-visible {
 
 .whatsapp-sticky a:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 32px rgba(37, 211, 102, 0.50);
+  box-shadow: 0 6px 32px oklch(0.50 0.17 152 / 0.45);
   color: white;
 }
 
@@ -2609,4 +2634,146 @@ img { height: auto; }
 
 .tour-card-img {
   aspect-ratio: 4 / 3;
+}
+
+/* ============================================================
+   NAV COMPAT — Pages internes (tour, faq, contact, 404…)
+   utilisent des classes HTML différentes de index.html.
+   Ces règles les alignent sur le même rendu visuel.
+   ============================================================ */
+
+/* Layout flex du header (alias de .nav-inner) */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+}
+
+/* Nav desktop — masquée sur mobile, flex sur 1024px+ */
+.nav-desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Liste des liens desktop (alias de .nav-links) */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  list-style: none;
+}
+
+/* Liens et bouton dropdown desktop */
+.nav-link {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-inverse);
+  transition: color var(--duration-fast) var(--ease-default);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  text-decoration: none;
+}
+.site-header.is-solid .nav-link { color: var(--color-text); }
+.nav-link:hover { color: var(--color-secondary); }
+.site-header.is-solid .nav-link:hover { color: var(--color-accent); }
+
+/* Logo texte (tour pages n'ont pas d'image logo) */
+.nav-logo-text {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--color-text-inverse);
+  transition: color var(--duration-fast) var(--ease-default);
+  text-decoration: none;
+}
+.site-header.is-solid .nav-logo-text { color: var(--color-text); }
+
+/* Catégorie dans le dropdown */
+.nav-dropdown-category {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-widest);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: var(--spacing-3) var(--spacing-5) var(--spacing-1);
+  display: block;
+}
+
+/* ---- Boutons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-default),
+              transform var(--duration-fast) var(--ease-spring),
+              box-shadow var(--duration-fast) var(--ease-default);
+}
+.btn-sm {
+  font-size: var(--font-size-xs);
+  padding: var(--spacing-2) var(--spacing-4);
+}
+.btn-lg {
+  font-size: var(--font-size-base);
+  padding: var(--spacing-4) var(--spacing-8);
+}
+
+/* ---- Hero badges container ---- */
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-5);
+}
+
+/* ---- Navigation mobile compat ---- */
+.nav-mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+}
+
+.nav-mobile-link {
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  padding: var(--spacing-4) 0;
+  border-bottom: 1px solid var(--color-border-subtle);
+  display: block;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.nav-mobile-link:hover { color: var(--color-accent); }
+.nav-mobile-link.nav-link--active { color: var(--color-accent); }
+
+.nav-mobile-category {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-widest);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: var(--spacing-6) 0 var(--spacing-2);
+  display: block;
 }
